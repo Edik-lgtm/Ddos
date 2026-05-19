@@ -750,11 +750,10 @@ async def chat_handler(message: types.Message):
         # ОТПРАВКА ФОТО С ТЕКСТОМ
         # Текст уходит в параметр caption (подпись к фото)
         await message.answer(
-            photo=PHOTO_IDS['проф'],
-            caption=text,
-            parse_mode="HTML",
-            reply_markup=kb
-        )
+    text,
+    parse_mode="HTML",
+    reply_markup=kb
+)
         return
 
 
